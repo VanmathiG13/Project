@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANDWRITTEN DIGIT RECOGNITION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <div class="header-section">
+        <a href="#" class="logo"><img src="images/logo.png" width="40px" height="40px"></a>
+        <div class="header-content">
+            <a class="active" href="#home">HOME</a>
+            <a href="#prediction">PREDICTION</a>
+        </div>
+    </div>
+
+    <section class="bg-image" id="home"> 
+        <div class="home-section">
+            <h2 class="title">HANDWRITTEN DIGIT RECOGNITION</h2>
+            <h3 class="title"> USING CONVOLUTIONAL NEURAL NETWORK</h3>
+            <p class="sub-title">This will predict the handwritten digits accurately</p> 
+        </div>
+    </section>
+
+    <section id="prediction"> 
+        <p class="text">DRAW THE DIGIT</p>
+        <div id="sketchpadapp">
+            <div class="row">
+                <div class="leftside">
+                    <div class>
+                        <canvas id="sketchpad" height="200" width="200"></canvas>
+                    </div>
+                    <div class="buttons_div">
+                        <button type="button" class="btn" id="predict_button">Predict</button>
+                        <button type="button" class="btn" id="clear_button">Clear</button>
+                    </div>
+                </div>
+                <div class="predicted_answer">
+                    <h2 id="prediction_heading">Prediction</h2>
+                    <h1 id="result"></h1>
+                    <p id="accuracy">Accuracy:</p>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
